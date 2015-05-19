@@ -1,5 +1,7 @@
 package net.hsexpert.main;
 
+import net.hsexpert.slideDemo.SliderFrame;
+
 import javax.swing.*;
 
 /**
@@ -12,6 +14,7 @@ public class TabFrame extends JFrame {
 
     public TabFrame() {
         tabPane = new JTabbedPane();
+        tabPane.addTab("SlideDemo", new SliderFrame());
         this.add(tabPane);
     }
 
